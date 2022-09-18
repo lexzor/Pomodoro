@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Timer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section>
+
+        <div class="status-container">
+            <h1 id="status">WAITING</h1>
+        </div>
+
+        <div class="container">
+            <div class="topbar">
+                <div class="time-btn">
+                    <div class="btn"><p>25</p></div>
+                    <div class="btn active"><p>30</p></div>
+                    <div class="btn"><p>50</p></div>
+                </div>
+            </div>
+            <div class="timer">
+                <p id="timer">30:00</p>
+            </div>
+
+            <div class="status-btn">
+                <p onclick="manip(0)">▶️</p>
+                <p onclick="manip(1)">⏸</p>
+                <p onclick="manip(2)">⏹</p>
+            </div>
+
+        </div>
+
+        <div class="score-container">
+            <h1 id="score">0 Pomodoros</h1>
+        </div>
+
+    </section>
+</body>
+</html>

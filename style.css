@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Roboto&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+    user-select: none;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #1B84AB;
+}
+
+.container {
+    width: 320px;
+    height: 570px;
+    background-color:azure;
+    margin: 30px auto;
+    background: rgb(85,217,209);
+    background: linear-gradient(145deg, rgba(85,217,209,1) 0%, rgba(176,247,228,1) 99%);
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.295);
+}
+
+.time-btn{
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around; 
+    font-weight: bold; 
+    font-size: 25px;  
+    font-family: 'Roboto', sans-serif;
+    border-top-left-radius: 20px;
+}
+
+.time-btn .btn {
+    background-color:#2CB6DC;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.time-btn .btn p {
+    margin-top: 30px;
+    color: white;
+    text-align: center;
+}
+
+
+.time-btn .active {
+    background-color: #1B84AB;
+    cursor: pointer;
+}
+
+.time-btn .btn:first-child {
+    border-top-left-radius: inherit;
+}
+
+.time-btn .btn:last-child {
+    border-top-right-radius: 20px;
+}
+
+.status-container,
+.score-container {
+    background-color:rgba(255, 255, 255, 0.212);
+    width: 140px;
+    height: 50px;
+    margin: 50px auto;
+    text-align: center;
+    border-radius: 20px;
+    color: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.301);
+}
+
+.status-container h1 {
+    padding: 10px 0;
+}
+
+.score-container h1 {
+    font-size: 20px;
+    padding: 10px 0;
+}
+
+.timer{
+    position:relative;
+    top: 250px;
+    width: 120px;
+    height: 50px;
+    margin: auto;
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    font-weight: 0;
+}
+
+.topbar {
+    position: absolute;
+    width: inherit;
+    height: 90px;
+    background-color: #2CB6DC;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+}
+
+.status-btn{
+    position: relative;
+    text-align:center;
+    top: 425px;
+    width: 150px;
+    height: 70px;
+    display: flex;
+    gap: 20px;
+    left: 60px;
+}
+
+.status-btn p {
+    font-size: 40px;
+    text-align: center;  
+}
+
+.status-btn p:hover {
+    cursor: pointer;
+}
